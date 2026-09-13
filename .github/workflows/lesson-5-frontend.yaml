@@ -32,7 +32,7 @@ jobs:
     needs: [deploy]
     runs-on: ubuntu-latest
     steps:
-      -name: ZAP Scan
-      uses: zaproxy/action-baseline@v0.15.0
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.15.0
         with:
-        target: 'https://hangryhippo.quantic.host'
+          target: 'https://hangryhippo.quantic.host'
